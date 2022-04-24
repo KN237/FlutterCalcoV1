@@ -43,7 +43,9 @@ class _HistoryState extends State<History> {
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return Center(
-              child: CircularProgressIndicator(),
+              child: CircularProgressIndicator(
+                color: Color(0xff6C81ae),
+              ),
             );
           } else if (snapshot.connectionState == ConnectionState.done) {
             if (!snapshot.hasData) {
@@ -88,12 +90,15 @@ class _HistoryState extends State<History> {
                                   fontSize: 30,
                                   fontWeight: FontWeight.w900),
                             ),
-                            Text(
-                              tab[i].result,
-                              style: TextStyle(
-                                  color: Color(0xffb5bed3),
-                                  fontSize: 30,
-                                  fontWeight: FontWeight.w900),
+                            Flexible(
+                              child: Text(
+                                tab[i].result,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(
+                                    color: Color(0xffb5bed3),
+                                    fontSize: 30,
+                                    fontWeight: FontWeight.w900),
+                              ),
                             ),
                           ],
                         ),

@@ -86,7 +86,7 @@ class Data extends ChangeNotifier {
   }
 
   sust() {
-    //+
+    //
     if (!(operation.contains('x') ||
         operation.contains('+') ||
         operation.contains('-', 1) ||
