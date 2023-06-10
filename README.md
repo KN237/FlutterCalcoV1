@@ -1,3 +1,8 @@
-Flutter calculator
 
-![calco](https://user-images.githubusercontent.com/69805539/164951142-3da67cd3-9085-4cce-96fc-6c80f4c06518.png)
+# Flutter calculator
+This is a simple Calculator I created using flutter
+<br />
+<br />
+<img  src="calco1.png" width="300" />
+<img src="calco2.png" width="300" />
+
